@@ -24,11 +24,6 @@ footprint = () ->
   #pad.ro = 10
   
   pads = alt_dual [pad], 10, pad_dist_y, pad_dist_x
-  p1 = single pad, 5, pad_dist_y
-  p1 = adjust_x p1, -pad_dist_x/2
-  p2 = single pad, 1, 0
-  p2 = adjust_x p2, pad_dist_x/2
-  p2 = generate_names p2, 1
 
   r1 = make_rect body_width, body_length, line_width, 'silk'
   r2 = make_rect 1.1*pad_length, 2*pad_width, line_width, 'silk'
